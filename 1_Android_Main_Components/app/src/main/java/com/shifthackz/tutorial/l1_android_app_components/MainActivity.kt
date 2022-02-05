@@ -4,6 +4,7 @@ import android.content.*
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.IBinder
+import android.widget.Button
 import android.widget.Toast
 import com.shifthackz.tutorial.l1_android_app_components.R
 
@@ -24,6 +25,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        findViewById<Button>(R.id.btn_call)?.setOnClickListener {
+            startActivity(Intent(Intent.ACTION_DIAL))
+        }
 
         val serviceReceiver = object : BroadcastReceiver() {
             override fun onReceive(context: Context?, intent: Intent?) {
