@@ -10,22 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShiftHackZLesson2ViewLayoutTypes">
         <activity
-            android:name=".ConstraintSimpleLayoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ConstraintLayoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RelativeLayoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FrameLayoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LinearLayoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".presentation.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +18,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".presentation.constraint.ConstraintSimpleLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.constraint.ConstraintLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.relative.RelativeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.frame.FrameLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.linear.LinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.views.ViewComponentsActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

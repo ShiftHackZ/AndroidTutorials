@@ -4,63 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:padding="16dp"
+    tools:ignore="ContentDescription"
+    tools:context=".presentation.main.MainActivity">
 
     <TextView
-        android:id="@+id/tvGreeting"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:text="Hello, World"
-        android:textColor="#970F0F"
-        android:textSize="28sp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="#ff0000"
-        android:src="@drawable/ic_shifthackz" />
-
-    <EditText
+        android:id="@+id/tvHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите возраст"
-        android:inputType="numberPassword"
-        android:text="14"
-        android:digits="0123456789" />
+        android:layout_marginVertical="50dp"
+        android:gravity="center"
+        android:text="View Layout Types"
+        android:textColor="#080D54"
+        android:textSize="28sp" />
 
     <Button
+        android:id="@+id/btnViews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Apply"
-        android:enabled="true" />
+        android:text="Main view components" />
 
-    <CheckBox
+    <Button
+        android:id="@+id/btnLinear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:checked="true"
-        android:text="Я согласен подписаться на канал)" />
+        android:text="Linear Layout Example" />
 
-    <Switch
+    <Button
+        android:id="@+id/btnFrame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Получать уведомления о новых видео"/>
+        android:text="Frame Layout Example" />
 
-    <RadioButton
+    <Button
+        android:id="@+id/btnRelative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Вариант 1" />
+        android:text="Relative Layout Example" />
 
-    <RadioButton
+    <Button
+        android:id="@+id/btnConstraint1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:checked="true"
-        android:text="Вариант 2" />
+        android:text="Constraint Layout Example 1" />
 
-    <RadioButton
+    <Button
+        android:id="@+id/btnConstraint2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Вариант 3" />
+        android:text="Constraint Layout Example 2" />
 
 </LinearLayout>

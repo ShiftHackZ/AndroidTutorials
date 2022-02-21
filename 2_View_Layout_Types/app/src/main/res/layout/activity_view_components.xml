@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    tools:ignore="ContentDescription"
+    tools:context=".presentation.views.ViewComponentsActivity">
+
+    <TextView
+        android:id="@+id/tvGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello, World"
+        android:textColor="#970F0F"
+        android:paddingVertical="16dp"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:background="#E4A3A3"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_shifthackz" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your age"
+        android:inputType="number"
+        android:digits="0123456789" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:enabled="true" />
+
+    <CheckBox
+        android:id="@+id/cbSubscribeAgreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="I agree subscribe to the channel" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receive new video notifications"/>
+
+    <RadioButton
+        android:id="@+id/rbAction1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Action 1" />
+
+    <RadioButton
+        android:id="@+id/rbAction2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Action 2" />
+
+    <RadioButton
+        android:id="@+id/rbAction3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Action 3" />
+
+</LinearLayout>
