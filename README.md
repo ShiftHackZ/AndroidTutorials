@@ -1,5 +1,5 @@
-# AndroidTutorials
-Android tutorials from my YouTube Channel
+# Android Tutorials
+Collection of code samples for my Android tutorials and lessons from [YouTube](https://www.youtube.com/channel/UCA21txLFo15Ey4KEm-vlisg).
 
 ## List of lessons
 
